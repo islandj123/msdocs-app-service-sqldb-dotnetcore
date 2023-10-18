@@ -24,7 +24,7 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.MISTEREDTESTAPP_AZURE_CREDENTIALS }}
+          creds: ${{ secrets.MISTER_ED_TEST_APP_SPN }}
 
       - name: Build and push container image to registry
         uses: azure/container-apps-deploy-action@v1
